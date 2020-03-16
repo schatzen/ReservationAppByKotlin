@@ -1,3 +1,1 @@
-println(test)
-
-prinlnt(test)2
+Log.d(asd)
