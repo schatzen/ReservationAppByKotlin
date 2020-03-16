@@ -1,3 +1,0 @@
-println(test)
-
-prinlnt(test)2
