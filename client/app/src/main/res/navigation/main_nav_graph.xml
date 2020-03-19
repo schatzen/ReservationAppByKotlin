@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/preloader">
+
+    <fragment
+        android:id="@+id/preloader"
+        android:name="com.t304.our_neighborhood.fragment.preloader"
+        android:label="fragment_preloader"
+        tools:layout="@layout/fragment_preloader" >
+        <action
+            android:id="@+id/action_preloader_to_login_nav_graph"
+            app:destination="@id/login_nav_graph"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+    </fragment>
+    <include app:graph="@navigation/login_nav_graph" />
+</navigation>
