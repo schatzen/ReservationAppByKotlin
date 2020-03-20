@@ -13,7 +13,7 @@ class preloader : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v = inflater.inflate(R.layout.fragment_preloader, container, false)
-        v.btn_perloader_go_login.setOnClickListener { findNavController().navigate(R.id.action_preloader_to_login_nav_graph) }
+        v.btn_perloader_go_login.setOnClickListener { findNavController().navigate(R.id.action_preloader_to_loginActivity2) }
         return v
     }
 }
