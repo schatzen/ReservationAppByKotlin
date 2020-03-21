@@ -11,17 +11,14 @@
         android:label="fragment_preloader"
         tools:layout="@layout/fragment_preloader" >
         <action
-            android:id="@+id/action_preloader_to_loginActivity2"
-            app:destination="@id/loginActivity2"
+            android:id="@+id/action_preloader_to_user_account_nav_graph"
+            app:destination="@id/user_account_nav_graph"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"
-            />
+            app:popUpTo="@id/preloader"
+            app:popUpToInclusive="true" />
     </fragment>
-    <activity
-        android:id="@+id/loginActivity2"
-        android:name="com.t304.our_neighborhood.LoginActivity"
-        android:label="activity_login"
-        tools:layout="@layout/activity_login" />
+    <include app:graph="@navigation/nav_graph_user_account" />
 </navigation>
