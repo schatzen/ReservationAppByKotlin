@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SignUpFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signup_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signup_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signup_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="12dp" />
+
+    <Button
+        android:id="@+id/btn_signup_prev"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="32dp"
+        android:layout_height="18dp"
+        android:background="#00FFFFFF"
+        android:text="prev"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline_signup_top" />
+
+    <Button
+        android:id="@+id/btn_signup_submit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        android:background="#00FFFFFF"
+        android:text="submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right"
+        app:layout_constraintTop_toTopOf="@+id/guideline_signup_top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <ImageView
+        android:id="@+id/iv_signup_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/preloader_logo1_1024x1024"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline_signup_header" />
+
+    <TextView
+        android:id="@+id/tv_signup_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="#333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_signup_logo"
+        app:layout_constraintTop_toTopOf="@+id/guideline_signup_header" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signup_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="140dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_signup_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        app:errorEnabled="false"
+        app:helperTextEnabled="false"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline_signup_body"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="11dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_signup_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="id"
+        app:errorEnabled="false"
+        app:helperTextEnabled="false"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toBottomOf="@+id/til_signup_name"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_signup_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="11dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_signup_pw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        app:errorEnabled="false"
+        app:helperTextEnabled="false"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toBottomOf="@+id/til_signup_id"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_signup_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14sp"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_signup_refeat_pw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="repeat password"
+        app:errorEnabled="false"
+        app:helperTextEnabled="false"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toBottomOf="@+id/til_signup_pw"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_signup_repeat_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14sp"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_signup_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        app:errorEnabled="false"
+        app:helperTextEnabled="false"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left"
+        app:layout_constraintTop_toBottomOf="@+id/til_signup_refeat_pw"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_signup_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPassword|phone"
+            android:singleLine="true"
+            android:textSize="14sp"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signup_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="12dp" />
+
+    <TextView
+        android:id="@+id/tv_signup_footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="빠르고 간단하게 내 주변 연습실을 예약할 수 있습니다."
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_signup_bottom"
+        app:layout_constraintStart_toStartOf="@+id/guideline_signup_left" />
+
+    <Button
+        android:id="@+id/btn_signup_preview"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        android:background="#00FFFFFF"
+        android:text="preView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_signup_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_signup_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
