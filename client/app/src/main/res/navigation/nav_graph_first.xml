@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/preloader"
-        android:name="com.t304.our_neighborhood.fragment.preloader"
+        android:name="com.t304.our_neighborhood.fragment.Preloader"
         android:label="fragment_preloader"
         tools:layout="@layout/fragment_preloader" >
         <action

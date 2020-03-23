@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.t304.our_neighborhood.R
 import kotlinx.android.synthetic.main.fragment_preloader.view.*
 
-class preloader : Fragment() {
+class Preloader : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v = inflater.inflate(R.layout.fragment_preloader, container, false)
