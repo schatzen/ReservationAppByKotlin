@@ -17,10 +17,14 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_loginFragment_to_nav_graph_home"
+            app:destination="@id/nav_graph_home" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.t304.our_neighborhood.fragment.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
+    <include app:graph="@navigation/nav_graph_home" />
 </navigation>

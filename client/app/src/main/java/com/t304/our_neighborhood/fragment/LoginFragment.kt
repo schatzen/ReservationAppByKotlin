@@ -14,6 +14,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v = inflater.inflate(R.layout.fragment_login, container, false)
         v.btn_login_go_signup.setOnClickListener { findNavController().navigate(R.id.action_loginFragment_to_signUpFragment) }
+        v.btn_login_submit.setOnClickListener { findNavController().navigate(R.id.action_loginFragment_to_nav_graph_home) }
         return v
     }
 
