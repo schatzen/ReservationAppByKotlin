@@ -4,9 +4,9 @@ import android.content.Context
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 
-fun hideKeyBoard(targetView: View, context: Context?) =
+fun hideKeyBoard(targetView: View?, context: Context?) =
     (context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager)
         .hideSoftInputFromWindow(
-            targetView.windowToken,
+            targetView?.windowToken,
             0
         )
