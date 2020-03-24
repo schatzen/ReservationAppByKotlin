@@ -11,21 +11,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="10dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_login_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="20dp" />
+        app:layout_constraintGuide_end="10dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_login_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="12dp" />
+        app:layout_constraintGuide_begin="10dp" />
 
     <Button
         android:id="@+id/btn_login_prev"
@@ -92,10 +92,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="id"
-        app:errorEnabled="false"
-        app:helperTextEnabled="false"
-        app:hintAnimationEnabled="true"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxStrokeColor="#FFC400"
         app:hintEnabled="true"
+        app:hintTextAppearance="@style/MyHintStyle"
         app:layout_constraintEnd_toStartOf="@+id/guideline_login_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_login_left"
         app:layout_constraintTop_toTopOf="@+id/guideline_login_body"
@@ -106,8 +110,12 @@
             android:id="@+id/tiet_login_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
             android:inputType="text"
-            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:theme="@style/MyEditTextStyle"
             tools:layout_conversion_absoluteHeight="45dp"
             tools:layout_conversion_absoluteWidth="411dp"
             tools:layout_editor_absoluteX="0dp"
@@ -118,11 +126,17 @@
         android:id="@+id/til_login_pw"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:hint="password"
-        app:errorEnabled="false"
-        app:helperTextEnabled="false"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxStrokeColor="#FFC400"
         app:hintAnimationEnabled="true"
         app:hintEnabled="true"
+        app:hintTextAppearance="@style/MyHintStyle"
         app:layout_constraintEnd_toStartOf="@+id/guideline_login_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_login_left"
         app:layout_constraintTop_toBottomOf="@+id/til_login_id"
@@ -133,9 +147,13 @@
             android:id="@+id/tiet_login_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
             android:inputType="textPassword"
+            android:padding="10dp"
             android:singleLine="true"
-            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:theme="@style/MyEditTextStyle"
             tools:layout_conversion_absoluteHeight="45dp"
             tools:layout_conversion_absoluteWidth="411dp"
             tools:layout_editor_absoluteX="0dp"
@@ -147,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="12dp" />
+        app:layout_constraintGuide_end="10dp" />
 
     <Button
         android:id="@+id/btn_login_go_signup"
