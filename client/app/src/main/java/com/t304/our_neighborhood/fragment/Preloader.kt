@@ -19,11 +19,6 @@ class Preloader : Fragment() {
         val v = inflater.inflate(R.layout.fragment_preloader, container, false)
         v.btn_perloader_go_login.setOnClickListener { findNavController().navigate(R.id.action_preloader_to_user_account_nav_graph) }
 
-        //test TODO DELETE
-        val viewModel = ViewModelProvider(this)[UserAccountViewModel::class.java]
-        viewModel.resultOfInsert.observe(viewLifecycleOwner, Observer { Log.d("ljw", it.toString()) })
-        viewModel.signUp()
-
         return v
     }
 
