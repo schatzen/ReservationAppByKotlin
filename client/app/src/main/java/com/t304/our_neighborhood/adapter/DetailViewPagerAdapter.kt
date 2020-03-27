@@ -21,7 +21,7 @@ class DetailViewPagerAdapter : RecyclerView.Adapter<DetailViewPagerAdapter.Detai
             .inflate(R.layout.item_detail_image, parent, false)
     )
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailItemViewHolder  = DetailItemViewHolder(parent)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailItemViewHolder = DetailItemViewHolder(parent)
 
     override fun getItemCount(): Int = colorList.size
 
