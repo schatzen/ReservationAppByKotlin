@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="useGeneratedKeys" value="true" />
+		<setting name="defaultExecutorType" value="REUSE" />
+		<setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+
+	<typeAliases>
+		<typeAlias type="vo.ReservationVo" alias="reserv" />
+		<typeAlias type="vo.MemberVo" alias="member" />
+		<typeAlias type="vo.BranchVo" alias="branch" />
+		<typeAlias type="vo.RoomVo" alias="room" />
+	</typeAliases>
+
+	<mappers>
+		<!-- reserv mapper -->
+		<mapper resource="config/mybatis/mapper/reserv.xml" />
+
+		<!-- member mapper -->
+		<mapper resource="config/mybatis/mapper/member.xml" />
+		
+		<!-- branch mapper -->
+		<mapper resource="config/mybatis/mapper/branch.xml" />
+		
+		<!-- room mapper -->
+		<mapper resource="config/mybatis/mapper/room.xml" />
+	</mappers>
+</configuration>

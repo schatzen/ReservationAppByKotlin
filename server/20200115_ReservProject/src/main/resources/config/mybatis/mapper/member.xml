@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+
+	<!-- id 조회 -->
+	<select id="member_selectOne" parameterType="String"
+		resultType="member">
+		select * from member where member_id = #{member_id}
+	</select>
+
+	<!-- 회원가입 -->
+	<insert id="member_insert" parameterType="member">
+		insert into member values(seq_member_idx.nextVal,#{member_name},#{member_id},#{member_pwd},#{member_tel},'x','client',sysdate)
+	</insert>
+
+	<delete id="member_delete" parameterType="int">
+		delete from member
+		where member_idx = #{member_idx}
+	</delete>
+
+	<select id="member_selectList" resultType="member">
+		select * from member
+		order by member_idx desc
+	</select>
+
+	<select id="member_selectOne_idx" parameterType="int"
+		resultType="member">
+		select * from member where member_idx = #{member_idx}
+	</select>
+
+
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

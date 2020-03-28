@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="room">
+
+	<select id="room_name_list" parameterType="String"
+		resultType="room">
+		select room_idx,room_name from room where room_branch =
+		#{branch_name}
+	</select>
+
+	<!-- 방 비밀번호 리스트 -->
+	<select id="room_pwd_list" resultType="room">
+		select room_idx,
+		room_name, room_branch, room_pwd from room where room_branch= '이대 1호점'
+		or
+		room_branch= '이대 2호점' or room_branch= '방배 1호점' or room_branch= '방배
+		2호점'
+	</select>
+
+	<!-- 방 비밀번호 변경 -->
+	<update id="room_pwd_update" parameterType="Map">
+		update room set
+		room_pwd = #{room_pwd} where
+		room_idx = #{room_idx}
+	</update>
+
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

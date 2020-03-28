@@ -1,0 +1,405 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Jua", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+
+}
+
+/* =========================
+        Home
+==========================*/
+
+#home {
+    background: none;
+    height: 80%;
+}
+
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../img/reserv/reserv_1.jpg") no-repeat;
+    background-size: cover;
+}
+
+#home-overlay {
+    /* w3school overlay reference! */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-content-total {
+    padding-top: 15%;
+}
+
+
+#home-heading h1 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 52px;
+    font-weight: 300;
+    margin-top: 100px;
+    margin-left: 85px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+#home-heading h1 span {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+
+
+/* =========================
+          Buttons
+==========================*/
+.btn-general {
+    font-family: sans-serif;
+    border-radius: 28px;
+    font-size: 14px;
+    margin: 5px 6px;
+    padding: 14px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-general-reserv {
+    width: 320px;
+    font-family: sans-serif;
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 11px 88px 9px 88px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background-color: #f4c613;
+}
+
+
+.left-page-content {
+    margin-top: 10%;
+}
+
+
+.btn-plus-kakao {
+    color: #fff;
+    font-weight: 800;
+    border: 2px solid #fff;
+    display: inline-block;
+
+}
+
+.btn-plus-facebook {
+    color: #fff;
+    font-weight: 800;
+    border: 2px solid #fff;
+    display: inline-block;
+
+}
+
+
+.btn-plus-kakao:hover,
+.btn-plus-kakao:focus {
+    color: #f4c613;
+    font-weight: 800;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-plus-facebook:hover,
+.btn-plus-facebook:focus {
+    color: #3b5668;
+    font-weight: 800;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+/* =========================
+          Content Boxes
+==========================*/
+.content-box-lg {
+    padding-bottom: 60px;
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+/* =========================
+          Vertical Headings
+==========================*/
+.horizontal-heading h5 {
+    color: #f4c613;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.horizontal-heading h2 {
+    margin: 10px 0 0 0;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+
+/* =========================
+          About
+==========================*/
+
+#about-inner {
+    background-color: #fff;
+     margin: 70px 0;
+    padding: 0 60px;
+}
+
+.heading-top {
+    margin-bottom: 42px;
+}
+
+.heading-top hr {
+    width: 560px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: 6px auto;
+    border: none;
+}
+
+
+
+/* =========================
+          Nav Tabs
+==========================*/
+
+.nav-tabs {
+    text-align: center;
+    border-color: #f4c613;
+}
+
+
+.nav-tabs > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+}
+
+.nav-tabs li a {
+    color: #212226;
+    padding: 10px 100px;
+    font-size: 16px
+}
+
+ul.navbar-nav > li > .active {
+    background: none;
+    color: #f4c613;
+}
+
+
+.nav-tabs .active a,
+.nav-tabs .active a:hover {
+    color: #f4c613 !important;
+    border-left-color: #f4c613 !important;
+    border-top-color: #f4c613 !important;
+    border-right-color: #f4c613 !important;
+}
+
+.nav-tabs li a:hover {
+    background-color: #fff;
+    border-left-color: #fff;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #f4c613;
+}
+
+/* =========================
+         Photo
+==========================*/
+
+.branch-photo {
+    width: 100%;
+    margin: auto;
+}
+
+/* =========================
+          Navigation
+==========================*/
+
+.navbar {
+    padding: 35px 0 20px 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #f4c613;
+}
+
+/* White Navigation */
+.white-nav-top {
+    background: #fff;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+    color: #212226;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/* Scroll spy active state */
+.white-nav-top ul.navbar-nav > li > .active {
+    color: #f4c613;
+}
+
+
+/* =========================
+          plus
+==========================*/
+
+.plus-content {
+    padding: 20px 0;
+}
+
+.plus-content h1 {
+    margin-bottom: 4px;
+    color: #fff;
+
+}
+
+.plus-content p {
+    font-family: "Jua", sans-serif;
+    color: #000;
+    font-size: 19px;
+}
+
+.plus-friend-01 {
+    background-color: #f4c613;
+}
+
+.plus-friend-02 {
+    background-color: #3b5668;
+}
+
+/* =========================
+          Section
+==========================*/
+
+.section-content {
+    margin-top: 35px;
+}
+
+.inner-content span {
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.inner-content p {
+    display: inline-block;
+    margin: 0 30px;
+    text-align: center;
+}
+
+.inner-icon {
+    display: inline-block;
+
+}
+
+.inner-icon i {
+    font-size: 60px;
+    margin: 20px 40px 7px 40px;
+    color: #f4c613;
+}
+
+.inner-icon p {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+
+/* =========================
+         Table
+==========================*/
+
+.table th {
+    text-align: right;
+}
+
+/* =========================
+         Google
+==========================*/
+#map {
+   height: 400px;
+    width: 100%;
+}
+

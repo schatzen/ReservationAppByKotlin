@@ -1,0 +1,330 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #212226;
+}
+
+h1, h2, h3 {
+	font-family: "Jua", sans-serif;
+}
+
+h4, h5, h6 {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 100;
+}
+
+h4 {
+	font-weight: 500
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+section {
+	background: #fff;
+	overflow: hidden;
+}
+
+/* =========================
+        Home
+==========================*/
+#home {
+	background: none;
+	height: 55%;
+}
+
+#home-bg-video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100%;
+	min-height: 140%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	background: url("../img/reserv/reserv_3.jpg") no-repeat;
+	background-size: cover;
+}
+
+#home-overlay {
+	/* w3school overlay reference! */
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.home-content-total {
+	padding-top: 15%;
+}
+
+#home-heading h1 {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 52px;
+	font-weight: 300;
+	margin-top: 100px;
+	margin-left: 85px;
+	font-weight: 400;
+	display: inline-block;
+}
+
+#home-heading h1 span {
+	color: #f4c613;
+	font-weight: 500;
+}
+
+/* =========================
+          Buttons
+==========================*/
+.btn-general {
+	font-family: sans-serif;
+	border-radius: 28px;
+	font-size: 14px;
+	margin: 5px 6px;
+	padding: 14px 46px 12px 46px;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.btn-home-member {
+	color: #fff;
+	border: 1px solid #fff;
+	display: inline-block;
+}
+
+.btn-plus-kakao {
+	color: #fff;
+	font-weight: 800;
+	border: 2px solid #fff;
+	display: inline-block;
+}
+
+.btn-plus-facebook {
+	color: #fff;
+	font-weight: 800;
+	border: 2px solid #fff;
+	display: inline-block;
+}
+
+.btn-home-member:hover, .btn-home-member:focus {
+	color: #fff;
+	background-color: #f4c613;
+	border: 1px solid #f4c613;
+}
+
+.btn-plus-kakao:hover, .btn-plus-kakao:focus {
+	color: #f4c613;
+	font-weight: 800;
+	background-color: #fff;
+	border: 2px solid #fff;
+}
+
+.btn-plus-facebook:hover, .btn-plus-facebook:focus {
+	color: #3b5668;
+	font-weight: 800;
+	background-color: #fff;
+	border: 2px solid #fff;
+}
+
+/* =========================
+          Content Boxes
+==========================*/
+.content-box-lg {
+	padding: 80px 0 50px;
+	0;
+}
+
+/* =========================
+          Vertical Headings
+==========================*/
+.horizontal-heading h2 {
+	margin: 0;
+	font-size: 40px;
+	line-height: 45px;
+}
+
+/* =========================
+          Navigation
+==========================*/
+.navbar {
+	padding: 35px 0 20px 0;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+
+.site-nav-wrapper {
+	padding: 0 85px;
+}
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #f4c613;
+}
+
+/* White Navigation */
+.white-nav-top {
+	background: #fff;
+	padding: 10px 0;
+	-webkit-box-shadow: 0 8px 6px -9px #999;
+	box-shadow: 0 8px 6px -9px #999;
+	z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+    color: #212226;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/* Scroll spy active state */
+.white-nav-top ul.navbar-nav > li > .active {
+    color: #f4c613;
+}
+
+/* =========================
+          My Reservation
+==========================*/
+.col-md-3, .col-md-6 {
+	padding: 0;
+}
+
+.my-page-inner {
+	padding: 34px 0;
+}
+
+.my-page-top {
+	border-right: 1px solid #000;
+}
+
+.my-page-inner a {
+	color: #000;
+}
+
+.my-page-top i {
+	font-size: 26px;
+	margin-bottom: 4px;
+}
+
+.my-page-top p {
+	font-size: 16px;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0;
+}
+
+.my-page-top span {
+	color: #f4c613;
+}
+
+.my-page-inner a:hover, .my-page-inner a:focus {
+	color: #f4c613;
+	text-decoration: none;
+}
+
+.my-page-content {
+	height: 100%;
+	padding: 40px 20px;
+}
+
+.my-page-content p {
+	font-size: 15px;
+	margin: 0;
+	padding-top: 4px;
+}
+
+.my-page-content span {
+	font-size: 14px;
+}
+
+.content-notice a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.content-notice a:focus {
+	color: #000;
+}
+
+/* =========================
+          check icon
+==========================*/
+#reservation_list {
+	border-bottom: 1px solid #424B54;
+}
+
+#check_icon {
+	margin-top: 4px;
+}
+
+.fa-check-circle {
+	font-size: 26px;
+	color: #f4c613;
+	margin-right: 7px;
+}
+
+.fa-times-circle {
+	font-size: 26px;
+	color: #DB504A;
+}
+
+/* =========================
+          Buttons
+==========================*/
+.text_pwd {
+	width: 100px;
+}
+
+/* =========================
+          plus
+==========================*/
+.plus-content {
+	padding: 20px 0;
+}
+
+.plus-content h1 {
+	margin-bottom: 4px;
+	color: #fff;
+}
+
+.plus-content p {
+	font-family: "Jua", sans-serif;
+	color: #000;
+	font-size: 19px;
+}
+
+.plus-friend-01 {
+	background-color: #f4c613;
+}
+
+.plus-friend-02 {
+	background-color: #3b5668;
+}

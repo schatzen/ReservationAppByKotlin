@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="reserv">
+
+
+	<insert id="reserv_check" parameterType="reserv">
+		insert into reservation
+		values(seq_reserv_idx.nextVal,
+		#{reserv_branch},#{reserv_room},#{reserv_start},#{reserv_end},#{reserv_doc},sysdate,#{reserv_state},#{reserv_member_idx})
+	</insert>
+
+	<!-- 예약 승인 (관리자용) -->
+	<update id="check_confirmed" parameterType="int">
+		update reservation
+		set reserv_state = 'confirmed' where reserv_idx = #{reserv_idx}
+	</update>
+
+	<!-- 예약 취소 (관리자용) -->
+	<update id="check_canceld" parameterType="int">
+		update reservation set
+		reserv_state = 'canceld' where reserv_idx = #{reserv_idx}
+	</update>
+
+
+	<!--예약 확인 -->
+	<select id="not_used_reserv_list" parameterType="int"
+		resultType="reserv">
+		<![CDATA[ select * from reservation where reserv_member_idx = #{reserv_member_idx} and reserv_end > to_char(sysdate,'YYYY-mm-dd HH:mi') ]]>
+	</select>
+
+	<!-- 본인 이용내역 조회 -->
+	<select id="used_reserv_list" parameterType="int"
+		resultType="reserv"> 
+		<![CDATA[ select * from reservation where reserv_member_idx = #{reserv_member_idx} and reserv_end < to_char(sysdate,'YYYY-mm-dd HH:mi') ]]>
+	</select>
+
+	<!--예약 확인 (관리자용) -->
+	<select id="admin_confirmed_list" resultType="reserv">
+		select * from
+		reservation where reserv_state = 'confirmed' or reserv_state =
+		'canceled'
+	</select>
+
+	<!-- 이용내역 확인 (관리자용) -->
+	<select id="admin_not_confirmed_list" resultType="reserv">
+		select * from
+		reservation where reserv_state = 'not_confirmed'
+	</select>
+
+	
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
