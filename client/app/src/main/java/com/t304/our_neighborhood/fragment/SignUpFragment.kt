@@ -63,6 +63,8 @@ class SignUpFragment : Fragment() {
                         )
                     )
                 }
+
+
             }
             else{
                 (context?.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator).vibrate(50)
